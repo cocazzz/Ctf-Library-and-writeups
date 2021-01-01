@@ -9,7 +9,7 @@ Made with love by Abdelhak Bouguila and h4x0r team !
 ## Cryptography challenges :
 **1- Elves City : 300 points**
 <br> ♦ description :
-WHAT !? people are so strange here, they only count to 5 ?! 
+<br>WHAT !? people are so strange here, they only count to 5 ?! 
 <br> 404 202 440 143 424 443 343 202 203 201 340 402 113 433 201 1000
 <br>♣ Solution :
 <br>the main idea here is to base 5 decrypt number by number and you directly have the flag
@@ -22,7 +22,7 @@ ____________________________________________
 <br>♦ description :
 <br>Can you crack this one + flag txt file + python file
 <br>♣ Solution :
-Given the encryption and decryption  code, we notice that the encryption is using a key generated randomly
+<br>Given the encryption and decryption  code, we notice that the encryption is using a key generated randomly
 to create the cipher so all we need to do is to find the encryption key . but when observing the encryption
 methode we see that ```len(key)==6``` and every character of the key is interacting with one character of the flag
 until the key letters are over so the encryption methode uses the first character of it again .
@@ -54,7 +54,7 @@ always used in cryptography and ciphering. for example by just transforming
 an ord() of a plain text by a sequence makes it kind of impossible to crack ...
 <br>7 - 20 - 47 - 94 - 197 - ... + flag cipher
 <br>♣ Solution :
-This on is nothing but a math problem. and all we have to do is to find the
+<br>This on is nothing but a math problem. and all we have to do is to find the
 mathematical sequence used for the encryption :
 <br>Given that N1 = 7 , N2=20, N3= 47, ...
 <br>let's try to solve it by playing with an X variable.
