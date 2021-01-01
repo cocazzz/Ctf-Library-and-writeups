@@ -6,7 +6,7 @@ December 2020.
 Feel free to check the writeups or reuse the challenges source codes in your CTFs
 Made with love by Abdelhak Bouguila and h4x0r team !
 
-## Cryptography challenges :
+## Cryptography challenges : ##
 **1- Elves City : 300 points**
 <br> ♦ description :
 <br>WHAT !? people are so strange here, they only count to 5 ?! 
@@ -75,4 +75,5 @@ this mathematical sequence. (you can find the code in the challenge repository)
 <br>♠ Flag :
 <br>```h4x0r{Xm4S_Maths_Are_L0ve}```
 
-
+## WEB challenges : ##
+**1- Pokemaniacs : 500 points**
