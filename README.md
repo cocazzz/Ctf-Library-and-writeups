@@ -1,9 +1,9 @@
 # Cts-Library-and-writeups
 
-Welcome to Catch the santa challenges write-ups and source codes.
+Welcome to Catch the santa challenges writeups and source codes.
 These challenges were presented in a CTF by h4x0r community which had place in 27th of
 December 2020.
-Feel free to check the write-ups or reuse the challenges source codes in your CTFs
+Feel free to check the writeups or reuse the challenges source codes in your CTFs
 Made with love by Abdelhak Bouguila and h4x0r team !
 
 ## Cryptography challenges :
