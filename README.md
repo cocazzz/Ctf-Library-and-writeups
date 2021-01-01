@@ -6,9 +6,9 @@ December 2020.
 Feel free to check the write-ups or reuse the challenges source codes in your CTFs
 Made with love by Abdelhak Bouguila and h4x0r team !
 
-# Cryptography challenges :
+## Cryptography challenges :
 
-1- Elves City : 300 points
+######1- Elves City : 300 points
 <br> ♦ description :
 WHAT !? people are so strange here, they only count to 5 ?! 
 <br> 404 202 440 143 424 443 343 202 203 201 340 402 113 433 201 1000
@@ -19,7 +19,7 @@ WHAT !? people are so strange here, they only count to 5 ?!
 
 ____________________________________________
 
-<br>2- Crackable :
+<br>######2- Crackable :
 <br>♦ description :
 <br>Can you crack this one + flag txt file + python file
 <br>♣ Solution :
@@ -47,7 +47,7 @@ function with the flag and abra kadabra, the flag is yours !
 <br>♠ Flag :
 <br>h4x0r{SANt4_M0re_L1ke_SATAN!}
 ______________________________________
-<br>3- Math :
+<br>######3- Math :
 <br>♦ description :
 <br>Connect with: nc h4xor.tech 1022
 <br>mathematical sequences are so much the hardest to solve, that's why it is
