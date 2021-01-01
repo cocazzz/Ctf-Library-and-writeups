@@ -18,7 +18,7 @@ Made with love by Abdelhak Bouguila and h4x0r team !
 
 ____________________________________________
 
-<br>**2- Crackable :**
+<br>**2- Crackable : 600 points **
 <br>♦ description :
 <br>Can you crack this one + flag txt file + python file
 <br>♣ Solution :
@@ -46,7 +46,7 @@ function with the flag and abra kadabra, the flag is yours !
 <br>♠ Flag :
 <br>```h4x0r{SANt4_M0re_L1ke_SATAN!}```
 ______________________________________
-<br>**3- Math :**
+<br>**3- Math : 700 points**
 <br>♦ description :
 <br>Connect with: ```nc h4xor.tech 1022```
 <br>mathematical sequences are so much the hardest to solve, that's why it is
