@@ -77,3 +77,8 @@ this mathematical sequence. (you can find the code in the challenge repository)
 
 ## WEB challenges : ##
 **1- Pokemaniacs : 500 points**
+<br> ♦ description :
+<br> only IP and port given
+<br> ♣ Solution :
+<br> This web application will ask us to give a valide pokemon name and will give us a certification as that mentionned pokemon fan
+
