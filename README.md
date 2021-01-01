@@ -18,7 +18,7 @@ Made with love by Abdelhak Bouguila and h4x0r team !
 
 ____________________________________________
 
-<br>**2- Crackable : 600 points **
+<br>**2- Crackable : 600 points**
 <br>♦ description :
 <br>Can you crack this one + flag txt file + python file
 <br>♣ Solution :
