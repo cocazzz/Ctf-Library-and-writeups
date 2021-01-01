@@ -14,7 +14,7 @@ WHAT !? people are so strange here, they only count to 5 ?!
 <br>♣ Solution :
 <br>the main idea here is to base 5 decrypt number by number and you directly have the flag
 <br>♠ Flag :
-<br>h4x0r{b453_f!v3}
+<br>```h4x0r{b453_f!v3}```
 
 ____________________________________________
 
@@ -24,31 +24,31 @@ ____________________________________________
 <br>♣ Solution :
 Given the encryption and decryption  code, we notice that the encryption is using a key generated randomly
 to create the cipher so all we need to do is to find the encryption key . but when observing the encryption
-methode we see that len(key)==6 and every character of the key is interacting with one character of the flag
+methode we see that ```len(key)==6``` and every character of the key is interacting with one character of the flag
 until the key letters are over so the encryption methode uses the first character of it again .
 <br>which means the whole encryption process is the following :
-<br>for every char in flag : encrypt(flag(i),key(i))==cipher(i)
+<br>for every char in flag : ```encrypt(flag(i),key(i))==cipher(i)```
 <br>and the decryption function (which is given in the python code) is:
-<br>for every char in cipher : decrypt(cipher(i),key(i))==flag(i)
+<br>for every char in cipher : ```decrypt(cipher(i),key(i))==flag(i)```
 <br>But here is when the trick comes. the key is random and we have no logical way (as intended) to know it's chars
-Although, We know that every flag format in CTS start with "h4x0r{" .
+Although, We know that every flag format in CTS start with ```"h4x0r{"``` .
 For that we find ourselves at the situation where :
- <br>decrypt(cipher(0),key(0))=="h"
- <br>decrypt(cipher(1),key(1))=="4"
- <br>decrypt(cipher(2),key(2))=="x"
- <br>decrypt(cipher(3),key(3))=="0"
- <br>decrypt(cipher(4),key(4))=="r"
- <br>decrypt(cipher(5),key(5))=="{"
+ <br>```decrypt(cipher(0),key(0))=="h"```
+ <br>```decrypt(cipher(1),key(1))=="4"```
+ <br>```decrypt(cipher(2),key(2))=="x"```
+ <br>```decrypt(cipher(3),key(3))=="0"```
+ <br>```decrypt(cipher(4),key(4))=="r"```
+ <br>```decrypt(cipher(5),key(5))=="{"```
 <br>
 <br>And based on that , finding the key becomes a piece of cake. and once we find the key we can pass it to the decrypt
 function with the flag and abra kadabra, the flag is yours !
 (you can find the solution code at the challenge repository)
 <br>♠ Flag :
-<br>h4x0r{SANt4_M0re_L1ke_SATAN!}
+<br>```h4x0r{SANt4_M0re_L1ke_SATAN!}```
 ______________________________________
 <br>**3- Math :**
 <br>♦ description :
-<br>Connect with: nc h4xor.tech 1022
+<br>Connect with: ```nc h4xor.tech 1022```
 <br>mathematical sequences are so much the hardest to solve, that's why it is
 always used in cryptography and ciphering. for example by just transforming 
 an ord() of a plain text by a sequence makes it kind of impossible to crack ...
@@ -65,14 +65,14 @@ the result of cubing the X leads us to : A1=1, A2=8, A3=27, ... but when we try
 to power by 4 the results go higher than the mathematical sequence ones. so We
 Stick with power 3. if we try to find the difference between the mathematical 
 sequence result and the cubes result we will find the following :
-<br>N1-A1=6=3x2=(1+1)x(1+2)
-<br>N2-A2=12=3x4=(2+1)x(2+2)
-<br>N3-A3=20=4x5=(3+1)x(3+2)
-<br>N4-A4=30=5x6=(4+1)x(4+2)
-<br>TADA ! the sequence is : N(X)=(X^3)+(X+1)x(X+2)
+<br>```N1-A1=6=3x2=(1+1)x(1+2)```
+<br>```N2-A2=12=3x4=(2+1)x(2+2)```
+<br>```N3-A3=20=4x5=(3+1)x(3+2)```
+<br>```N4-A4=30=5x6=(4+1)x(4+2)```
+<br>TADA ! the sequence is : ```N(X)=(X^3)+(X+1)x(X+2)```
 <br>Now the only thing we have to do is to write the script that decrypts based on
 this mathematical sequence. (you can find the code in the challenge repository)
 <br>♠ Flag :
-<br>h4x0r{Xm4S_Maths_Are_L0ve}
+<br>```h4x0r{Xm4S_Maths_Are_L0ve}```
 
 
