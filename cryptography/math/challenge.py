@@ -9,7 +9,7 @@ def encrypt (flag) :
 message ='''mathematical sequences are so much the hardest to solve, that's why it is
 always used in cryptography and ciphering. for example by just transforming 
 an ord() of a plain text by a sequence makes it kind of impossible to crack ...
-7 - 20 - 47 - 94 - 197 - ... \n
+7 - 20 - 47 - 94 - 197 - ... \n'''
 
 #display
 print(message)
