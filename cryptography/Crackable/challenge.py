@@ -16,7 +16,7 @@ def encrypt (flag,S) :
     return enc
 
 
-flag="h4x0r{SANt4_M0re_L1ke_SATAN!}"
+flag="put flag here"
 
 
 AA=get_key()
