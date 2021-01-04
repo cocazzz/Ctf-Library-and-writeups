@@ -145,4 +145,9 @@ app.run(host='127.0.0.1', port=8000)
 <br>![image](https://user-images.githubusercontent.com/61564815/103547652-fbbcf580-4ea4-11eb-9686-82de8ec8cebd.png)
 <br> the trick here is to transform into a usefull RCE ! there is much to do here but on of the idea is to set the user as ``` user= "<username> & cat ./flag > ./file/username" ``` so the running command will be ``` touch ./files/<username> & cat ./flag > ./file/username ``` and abra kadabra. now the flag is in our file in the system !
 <br> ![image](https://user-images.githubusercontent.com/61564815/103547459-b4cf0000-4ea4-11eb-8206-0e34e3209f2e.png)
-
+<br> ![image](https://user-images.githubusercontent.com/61564815/103548066-843b9600-4ea5-11eb-90eb-e07e0a788994.png)
+<br> <h4> PART 3 </h4>
+<br> now that our file system contains the flag, all we have to do is to read it. but again when we refresh the page we are assigned a new random guest username again. So we need to have that user "pwner" again and we are going to use our python script again. once we set the final token , we create a post request of the /show that we discover when intercepting the show file button. and finally, FILE HUB is owned !
+<br>![image](https://user-images.githubusercontent.com/61564815/103548777-94a04080-4ea6-11eb-9a89-b6f45c4a2cb3.png)
+<br>♠ Flag :
+<br> h4x0r{Y0u_4r3_br34tH74k!ng}
