@@ -109,4 +109,17 @@ password : SantaSanSanS4N<3 ```
 <br>♠ Flag :
 <br> h4x0r{I_Kn0W_This_Song_FROM_0SU!}
 _______________________________________________
-<br> **2- Kurisumasu : 850 points**
+<br> **3- File HUB : 850 points**
+<br> ♦ description :
+<br> IP and port given
+<br> hint: os.system('touch ./files/' + str(userid))
+<br> ♣ Solution :
+<br> Filehub is the hardest challenge in Capture The Santa and needs a little bit of thinking. the first thing we need to discover is how the web application works. 
+<br> the File hub : 
+<br> 1- sets a random guest username to any new connection
+<br> 2- The user gets to create a file in the system with it's username
+<br> 3- The user can check if he has a file in the system and reads its content.
+<br> ![6](https://user-images.githubusercontent.com/61564815/103544092-d4175e80-4e9f-11eb-99e6-b2310b54834a.png)
+<br> The first step we must do is figuring out where and how the app is setting the username. burpsuit it is !
+<br> This application is using a session cookie as seen in the photo. and we get it right by decrypting it with base 64 !
+<br>![image](https://user-images.githubusercontent.com/61564815/103544425-63247680-4ea0-11eb-9dd3-f8d165829922.png)
