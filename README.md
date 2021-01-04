@@ -4,7 +4,8 @@ Welcome to Catch the santa challenges writeups and source codes.
 These challenges were presented in a CTF by h4x0r community which had place in 27th of
 December 2020.
 Feel free to check the writeups or reuse the challenges source codes in your CTFs
-Made with love by Abdelhak Bouguila and h4x0r team !
+Made with love by **Abdelhak Bouguila** and **abderrahim bouhdida** !
+you can check the other part [here](https://github.com/AbderrahimBouhdida/H4X0R-CTS-Writeup)
 
 ## Cryptography challenges : ##
 **1- Elves City : 300 points**
