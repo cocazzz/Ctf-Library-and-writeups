@@ -130,7 +130,7 @@ _______________________________________________
 <br> example of a python code :
 <br>
 ``` py
-from flask import Flask, session, redirect
+from flask import Flask, session
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret-key-goes-here'
 @app.route('/')
