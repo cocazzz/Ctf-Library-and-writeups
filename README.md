@@ -141,7 +141,7 @@ app.run(host='127.0.0.1', port=8000)
 ``` 
 <br> run this flask app and get the needed token !
 <br> <h4> PART 2 </h4>
-<br> Now that the token is under controle . it's time to check the hint that says ```os.system('touch ./files/' + str(userid))```. this hint tells how the file is created in the system . ```os.system()``` in python is used to run internal commands and in our case we will be running ``` touch ./files/username ``` and touch is a linux command used to create files. and this on is a 100% used in the /create as the http method we can discover when we intercept that create button :
+<br> Now that the token is under controle . it's time to check the hint that says ```os.system('touch ./files/' + str(userid))```. this hint tells how the file is created in the system . ```os.system()``` in python is used to run internal commands and in our case we will be running ``` touch ./files/username ``` and touch is a linux command used to create files. and this one is a 100% used in the /create as the http method we can discover when we intercept that create button :
 <br>![image](https://user-images.githubusercontent.com/61564815/103547652-fbbcf580-4ea4-11eb-9686-82de8ec8cebd.png)
 <br> the trick here is to transform into a usefull RCE ! there is much to do here but on of the idea is to set the user as ``` user= "<username> & cat ./flag > ./file/username" ``` so the running command will be ``` touch ./files/<username> & cat ./flag > ./file/username ``` and abra kadabra. now the flag is in our file in the system !
 <br><br> ![image](https://user-images.githubusercontent.com/61564815/103547459-b4cf0000-4ea4-11eb-8206-0e34e3209f2e.png)
