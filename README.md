@@ -98,7 +98,7 @@ ____________________________________________
 <br>![3](https://user-images.githubusercontent.com/61564815/103540473-07ef8580-4e9a-11eb-93f7-eee89233d8ba.png)
 <br> Since the hint says Dirb is allowed, so that's what we gonna try first. and we get a 200 on /backup. this directory will return a zip file which contains the architecture of this flask application . the first thing we see that it has a txt file named "so_secret_creds_file.txt" and a directory that will lead us to a secret login interface on "/super_secret_admin" that we can discover in the python file. 
 <br> ![4](https://user-images.githubusercontent.com/61564815/103541009-fe1a5200-4e9a-11eb-9bd9-4f39b06a328a.png)
-<br> the first thing we want to do is to reach that password file in the system. we can't just access to it in the browser since the flask does not allow that so we need to figue out a way to do that. 
+<br> the first thing we want to do is to reach that password file in the system. we can't just access to it in the browser since the flask does not allow that so we need to figue out a way to do it. 
 <br> Let's take a look at that post request we have in the application. We will be using burp Suit.
 <br> Do we see an LFI ? that's exactly what we will be using !
 ![5](https://user-images.githubusercontent.com/61564815/103541616-00c97700-4e9c-11eb-9b3c-9b2b3361226d.png)
