@@ -157,6 +157,6 @@ app.run(host='127.0.0.1', port=8000)
 <br> ♦ description :
 <br> merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! merry xmas ! ...
 <br> ♣ Solution :
-<br> This challenge is unintendedly solveable by [pyinstaller decompiler] (https://awesomeopensource.com/project/extremecoders-re/pyinstxtractor) called pyinstxtractor.
+<br> This challenge is unintendedly solveable by [pyinstaller decompiler](https://awesomeopensource.com/project/extremecoders-re/pyinstxtractor) called pyinstxtractor.
 <br>♠ Flag :
 <br> h4x0r{1000_wiShes_2_All_your_Dish3s!}
