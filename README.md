@@ -82,3 +82,6 @@ this mathematical sequence. (you can find the code in the challenge repository)
 <br> ♣ Solution :
 <br> This web application will ask us to give a valide pokemon name and will give us a certification as that mentionned pokemon fan
 ![1](https://user-images.githubusercontent.com/61564815/103538133-f1472f80-4e95-11eb-918c-100aa249a270.png)
+<br> This web application can be a victime of [HTML injection](https://www.acunetix.com/vulnerabilities/web/html-injection/)
+<br> We can discover that by passing any html tag in the post request or by just passing it in the input box and we can see that tag effect in the resulted pdf
+<br> So if we pass "<iframe src='flag.txt'></iframe>" in the input box, the flag will show up in the downloaded PDF !
