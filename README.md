@@ -90,3 +90,12 @@ this mathematical sequence. (you can find the code in the challenge repository)
 <br> h4x0r{1_WaNNA_B3.the_VERY_B3st}
 ____________________________________________
 <br> **2- Kurisumasu : 700 points**
+<br> ♦ description :
+<br> IP and port given
+<br> hint: dirbuster is allowed, use it !
+<br> ♣ Solution :
+<br> Once we open this web application, we see a Cute interface with stuff written in japanese. We do not care we are here to hack stuff.
+<br>![3](https://user-images.githubusercontent.com/61564815/103540473-07ef8580-4e9a-11eb-93f7-eee89233d8ba.png)
+<br> Since the hint says Dirb is allowed, so that's what we gonna try first. and we get a 200 on /backup. this directory will return a zip file which contains the architecture of this flask application . the first thing we see that it has a txt file named "so_secret_creds_file.txt" and a directory that will lead us to a secret login interface on "/super_secret_admin" that we can discover in the python file. 
+<br> ![4](https://user-images.githubusercontent.com/61564815/103541009-fe1a5200-4e9a-11eb-9bd9-4f39b06a328a.png)
+<br> the first thing we want to do is to reach that password file in the system. we can't just access to it in the browser since the flask does not allow that so we need to figue out a way to do that. 
